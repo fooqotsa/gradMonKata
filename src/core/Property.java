@@ -4,6 +4,7 @@ import Square.Square;
 
 
 //inconsequential change
+//change two
 
 
 public abstract class Property extends Square {
