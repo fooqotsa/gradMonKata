@@ -3,7 +3,7 @@ package core;
 import Square.Square;
 
 
-
+//inconsequential change
 
 
 public abstract class Property extends Square {
