@@ -7,7 +7,7 @@ import org.junit.Test;
 public class GoToJailTest {
 
 	@Test
-	public void testIfOccupiedTrueThenSentToJail() {
+	public void testIfSentToJail() {
 		GoToJail square = new GoToJail();
 		square.landOn();
 		square.goToJail();

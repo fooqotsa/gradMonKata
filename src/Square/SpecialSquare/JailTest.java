@@ -10,7 +10,7 @@ public class JailTest {
 	public void testIfJailTrueSquareIsOccupiedAndInJail() {
 		Jail square = new Jail();
 		GoToJail gojail = new GoToJail();
-		gojail.jail = true;
+		gojail.goToJail();
 		square.landOnJail();
 		
 		assertTrue(square.occupied);
@@ -21,8 +21,6 @@ public class JailTest {
 	@Test
 	public void testIfJailLandedOnSquareIsOccupiedAndJustVisiting(){
 		Jail square = new Jail();
-		GoToJail gojail = new GoToJail();
-		gojail.jail = false;
 		square.landOn();
 		square.landOnJail();
 		
