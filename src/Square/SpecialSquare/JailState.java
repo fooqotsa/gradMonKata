@@ -1,4 +1,4 @@
-package Square;
+package Square.SpecialSquare;
 
 public enum JailState {
 	InJail,

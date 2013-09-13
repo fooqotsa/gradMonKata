@@ -1,5 +1,5 @@
 package core;
-import Square;
+import Square.Square;
 
 
 
