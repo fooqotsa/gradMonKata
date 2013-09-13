@@ -1,4 +1,4 @@
-package Square;
+package Square.SpecialSquare;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package Square;
+package Square.SpecialSquare;
 
 
 public class Jail extends SpecialSquare{

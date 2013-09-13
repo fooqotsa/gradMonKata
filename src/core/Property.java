@@ -1,10 +1,9 @@
 package core;
-import Square;
 
 
 
 
-public abstract class Property extends Square {
+public abstract class Property extends Square.Square {
 
 	protected Group group;
 	protected int baseRent;

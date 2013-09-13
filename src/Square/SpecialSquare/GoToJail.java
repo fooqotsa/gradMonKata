@@ -1,4 +1,4 @@
-package Square;
+package Square.SpecialSquare;
 
 public class GoToJail extends SpecialSquare{
 	protected boolean jail = false;
