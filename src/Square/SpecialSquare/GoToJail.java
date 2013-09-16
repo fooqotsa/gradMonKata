@@ -9,8 +9,6 @@ public class GoToJail extends SpecialSquare{
 			inJail = new Jail();
 			jail = true;
 			System.out.println("Head directly to jail.  Do not pass Go, do not collect £200");
-			inJail.occupied = true;
-			occupied = false;
 		}
 	}
 

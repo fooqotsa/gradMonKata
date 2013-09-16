@@ -10,10 +10,13 @@ public class JailTest {
 	public void testIfJailTrueSquareIsOccupiedAndInJail() {
 		Jail square = new Jail();
 		GoToJail gojail = new GoToJail();
+		gojail.landOn();
 		gojail.goToJail();
-		square.landOnJail();
+		square.landOnJail(gojail);
 		
 		assertTrue(square.occupied);
+		assertTrue(gojail.occupied);
+		assertTrue(gojail.jail);
 		assertEquals(JailState.InJail, square.state);
 		
 	}
@@ -21,8 +24,10 @@ public class JailTest {
 	@Test
 	public void testIfJailLandedOnSquareIsOccupiedAndJustVisiting(){
 		Jail square = new Jail();
+		GoToJail gojail = new GoToJail();
+		gojail.jail = false;
 		square.landOn();
-		square.landOnJail();
+		square.landOnJail(gojail);
 		
 		assertTrue(square.occupied);
 		assertEquals(JailState.JustVisiting, square.state);
