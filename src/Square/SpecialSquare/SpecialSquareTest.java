@@ -7,8 +7,10 @@ import org.junit.Test;
 public class SpecialSquareTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testOccupied() {
+		SpecialSquare square = new SpecialSquare();
+		square.landOn();
+		assertTrue(square.occupied);
 	}
 
 }
