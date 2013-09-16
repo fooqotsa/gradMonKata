@@ -6,7 +6,7 @@ import java.util.List;
 public class Group {
 	
 	@SuppressWarnings("unused") //not complete!
-	private List<Property> members = new ArrayList();
+	private List<Property> members = new ArrayList<Property>();
 	
 	public boolean isMember(Property property) {
 		return true;
