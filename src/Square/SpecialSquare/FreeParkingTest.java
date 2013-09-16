@@ -11,7 +11,7 @@ public class FreeParkingTest {
 	@Test
 	public void testThatWhenLandedOnMessageDisplaye() {
 		FreeParking square = new FreeParking();
-		square.landedOn();
+		square.landOn();
 		
 		assertTrue(square.occupied);
 		assertEquals("You Landed On Free Parking, Nothing Happens", square.message);

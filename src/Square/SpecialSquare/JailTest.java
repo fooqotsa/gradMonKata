@@ -11,8 +11,7 @@ public class JailTest {
 		Jail square = new Jail();
 		GoToJail gojail = new GoToJail();
 		gojail.landOn();
-		gojail.goToJail();
-		square.landOnJail(gojail);
+		square.landOn(gojail);
 		
 		assertTrue(square.occupied);
 		assertTrue(gojail.occupied);
@@ -26,8 +25,7 @@ public class JailTest {
 		Jail square = new Jail();
 		GoToJail gojail = new GoToJail();
 		gojail.jail = false;
-		square.landOn();
-		square.landOnJail(gojail);
+		square.landOn(gojail);
 		
 		assertTrue(square.occupied);
 		assertEquals(JailState.JustVisiting, square.state);

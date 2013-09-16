@@ -10,7 +10,7 @@ public class GoToJailTest {
 	public void testIfSentToJail() {
 		GoToJail square = new GoToJail();
 		square.landOn();
-		square.goToJail();
+
 		
 		assertTrue(square.jail);
 	}
